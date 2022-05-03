@@ -1,0 +1,289 @@
+Date	School	Cycle	Schedule	Testing	Events
+2021-09-13	True	A	Homeroom	None	Start of MP1
+2021-09-14	True	B	Homeroom	None	None
+2021-09-15	True	A	Homeroom	None	None
+2021-09-16	False	None	None	None	Yom Kippur
+2021-09-17	True	B	Homeroom	None	None
+2021-09-18	False	None	None	None	None
+2021-09-19	False	None	None	None	None
+2021-09-20	True	A	Regular	Science	None
+2021-09-21	True	B1	Regular	Science	None
+2021-09-22	True	A1	Regular	World Languages, English Language Arts, Health	None
+2021-09-23	True	B2	Regular	Mathematics, Music, Art	None
+2021-09-24	True	A2	Regular	Computer Science, Social Studies, Technology	None
+2021-09-25	False	None	None	None	None
+2021-09-26	False	None	None	None	None
+2021-09-27	True	B	Regular	Science	None
+2021-09-28	True	A1	Regular	Science	None
+2021-09-29	True	B1	Regular	World Languages, English Language Arts, Health	None
+2021-09-30	True	A2	Regular	Mathematics, Music, Art	None
+2021-10-01	True	B2	Regular	Computer Science, Social Studies, Technology	None
+2021-10-02	False	None	None	None	None
+2021-10-03	False	None	None	None	None
+2021-10-04	True	A	Regular	Science	None
+2021-10-05	True	B1	Regular	Science	None
+2021-10-06	True	A1	Conference	World Languages, English Language Arts, Health	Faculty Meeting
+2021-10-07	True	B2	Regular	Mathematics, Music, Art	None
+2021-10-08	True	A2	Regular	Computer Science, Social Studies, Technology	None
+2021-10-09	False	None	None	None	None
+2021-10-10	False	None	None	None	None
+2021-10-11	False	None	None	None	Indigenous Peoples' Day
+2021-10-12	True	B	Regular	Science	None
+2021-10-13	True	A	PSAT	None	PSAT Administration
+2021-10-14	True	B2	Regular	Mathematics, Music, Art	None
+2021-10-15	True	A2	Regular	World Languages, English Language Arts, Health	None
+2021-10-16	False	None	None	None	None
+2021-10-17	False	None	None	None	None
+2021-10-18	True	B	Regular	Science	None
+2021-10-19	True	A1	Regular	Science	None
+2021-10-20	True	B1	Conference	World Languages, English Language Arts, Health	Faculty Meeting, End of MP1
+2021-10-21	True	A2	Regular	Mathematics, Music, Art	Start of MP2
+2021-10-22	True	B2	Regular	Computer Science, Social Studies, Technology	None
+2021-10-23	False	None	None	None	None
+2021-10-24	False	None	None	None	None
+2021-10-25	True	A	Regular	Science	None
+2021-10-26	True	B1	Regular	Science	None
+2021-10-27	True	A1	Regular	World Languages, English Language Arts, Health	Grades due 8am
+2021-10-28	True	B2	Regular	Mathematics, Music, Art	None
+2021-10-29	True	A2	Regular	Computer Science, Social Studies, Technology	None
+2021-10-30	False	None	None	None	None
+2021-10-31	False	None	None	None	None
+2021-11-01	True	B1	Regular	Science	Report Card Distribution
+2021-11-02	False	None	None	None	Election Day, Professional Development
+2021-11-03	True	A1	Conference	World Languages, English Language Arts, Health	Faculty Meeting
+2021-11-04	True	B2	Regular	Mathematics, Music, Art	None
+2021-11-05	True	A2	Regular	Computer Science, Social Studies, Technology	None
+2021-11-06	False	None	None	None	None
+2021-11-07	False	None	None	None	None
+2021-11-08	True	B1	Regular	Science	None
+2021-11-09	True	A1	Regular	World Languages, English Language Arts, Health	None
+2021-11-10	True	B2	Regular	Mathematics, Music, Art	None
+2021-11-11	False	None	None	None	Veterans Day
+2021-11-12	True	A2	Regular	Computer Science, Social Studies, Technology	None
+2021-11-13	False	None	None	None	None
+2021-11-14	False	None	None	None	None
+2021-11-15	True	B	Regular	None	Parent Teacher Conferences (evening)
+2021-11-16	True	A1	PTC	Science	Parent Teacher Conferences (daytime)
+2021-11-17	True	B1	Conference	World Languages, English Language Arts, Health	Faculty Meeting
+2021-11-18	True	A2	Regular	Mathematics, Music, Art	None
+2021-11-19	True	B2	Regular	Computer Science, Social Studies, Technology	None
+2021-11-20	False	None	None	None	None
+2021-11-21	False	None	None	None	None
+2021-11-22	True	A	Regular	Science	None
+2021-11-23	True	B1	Regular	Mathematics, Music, Art, Technology	None
+2021-11-24	True	A1	Regular	World Languages, English Language Arts, Computer Science, Social Studies, Health	None
+2021-11-25	False	None	None	None	Thanksgiving Day
+2021-11-26	False	None	None	None	Thanksgiving Day
+2021-11-27	False	None	None	None	None
+2021-11-28	False	None	None	None	None
+2021-11-29	True	B	Regular	None	None
+2021-11-30	True	A1	Regular	Science	None
+2021-12-01	True	B1	Conference	World Languages, English Language Arts, Health	Faculty Meeting
+2021-12-02	True	A2	Regular	Mathematics, Music, Art	None
+2021-12-03	True	B2	Regular	Computer Science, Social Studies, Technology	End of MP2
+2021-12-04	False	None	None	None	None
+2021-12-05	False	None	None	None	None
+2021-12-06	True	A	Regular	Science	Start of MP3
+2021-12-07	True	B1	Regular	Science	None
+2021-12-08	True	A1	Regular	World Languages, English Language Arts, Health	None
+2021-12-09	True	B2	Regular	Mathematics, Music, Art	None
+2021-12-10	True	A2	Regular	Computer Science, Social Studies, Technology	Grades due 8am
+2021-12-11	False	None	None	None	None
+2021-12-12	False	None	None	None	None
+2021-12-13	True	B	Regular	Science	None
+2021-12-14	True	A1	Regular	Science	Report Card Distribution
+2021-12-15	True	B1	Conference	World Languages, English Language Arts, Health	Department Meeting
+2021-12-16	True	A2	Regular	Mathematics, Music, Art	None
+2021-12-17	True	B2	Regular	Computer Science, Social Studies, Technology	None
+2021-12-18	False	None	None	None	None
+2021-12-19	False	None	None	None	None
+2021-12-20	True	A1	Regular	Science	None
+2021-12-21	True	B1	Regular	World Languages, English Language Arts, Health	None
+2021-12-22	True	A2	Regular	Mathematics, Music, Art	None
+2021-12-23	True	B2	Regular	Computer Science, Social Studies, Technology	None
+2021-12-24	False	None	None	None	Winter Recess
+2021-12-25	False	None	None	None	None
+2021-12-26	False	None	None	None	None
+2021-12-27	False	None	None	None	Winter Recess
+2021-12-28	False	None	None	None	Winter Recess
+2021-12-29	False	None	None	None	Winter Recess
+2021-12-30	False	None	None	None	Winter Recess
+2021-12-31	False	None	None	None	Winter Recess
+2022-01-01	False	None	None	None	None
+2022-01-02	False	None	None	None	None
+2022-01-03	True	A	Regular	None	None
+2022-01-04	True	B1	Regular	Science	None
+2022-01-05	True	A1	Regular	World Languages, English Language Arts, Health	None
+2022-01-06	True	B2	Regular	Mathematics, Music, Art	None
+2022-01-07	True	A2	Regular	Computer Science, Social Studies, Technology	None
+2022-01-08	False	None	None	None	None
+2022-01-09	False	None	None	None	None
+2022-01-10	True	B	Regular	Science	None
+2022-01-11	True	A1	Regular	Science	None
+2022-01-12	True	B1	Regular	World Languages, English Language Arts, Health	None
+2022-01-13	True	A2	Regular	Mathematics, Music, Art	None
+2022-01-14	True	B2	Regular	Computer Science, Social Studies, Technology	None
+2022-01-15	False	None	None	None	None
+2022-01-16	False	None	None	None	None
+2022-01-17	False	None	None	None	Martin Luther King Jr. Day
+2022-01-18	True	A1	Regular	Finals	Finals
+2022-01-19	True	B1	Regular	Finals	Finals
+2022-01-20	True	A2	Regular	Finals	Finals
+2022-01-21	True	B2	Regular	Finals	Finals
+2022-01-22	False	None	None	None	None
+2022-01-23	False	None	None	None	None
+2022-01-24	True	A	Regular	Finals	Finals, End of MP3
+2022-01-25	False	None	None	None	Regents Exams
+2022-01-26	False	None	None	None	Regents Exams
+2022-01-27	False	None	None	None	Regents Exams
+2022-01-28	False	None	None	None	Regents Exams, Senior Grades
+2022-01-29	False	None	None	None	None
+2022-01-30	False	None	None	None	None
+2022-01-31	False	None	None	None	Chancellor's Day
+2022-02-01	False	None	None	None	Lunar New Year
+2022-02-02	True	B	Conference	None	Faculty Meeting, Start of MP1
+2022-02-03	True	A1	Regular	None	None
+2022-02-04	True	B1	Regular	None	Grades due 8am
+2022-02-05	False	None	None	None	None
+2022-02-06	False	None	None	None	None
+2022-02-07	True	A	Regular	Science	None
+2022-02-08	True	B1	Regular	Science	Report Card Distribution
+2022-02-09	True	A1	Regular	World Languages, English Language Arts, Health	None
+2022-02-10	True	B2	Regular	Mathematics, Music, Art	None
+2022-02-11	True	A2	Regular	Computer Science, Social Studies, Technology	None
+2022-02-12	False	None	None	None	None
+2022-02-13	False	None	None	None	None
+2022-02-14	True	B	Regular	Science	None
+2022-02-15	True	A1	Regular	Science	None
+2022-02-16	True	B1	Regular	World Languages, English Language Arts, Health	None
+2022-02-17	True	A2	Regular	Mathematics, Music, Art	None
+2022-02-18	True	B2	Regular	Computer Science, Social Studies, Technology	None
+2022-02-19	False	None	None	None	None
+2022-02-20	False	None	None	None	None
+2022-02-21	False	None	None	None	Midwinter Recess
+2022-02-22	False	None	None	None	Midwinter Recess
+2022-02-23	False	None	None	None	Midwinter Recess
+2022-02-24	False	None	None	None	Midwinter Recess
+2022-02-25	False	None	None	None	Midwinter Recess
+2022-02-26	False	None	None	None	None
+2022-02-27	False	None	None	None	None
+2022-02-28	True	A	Regular	None	None
+2022-03-01	True	B1	Regular	Science	None
+2022-03-02	True	A1	Conference	World Languages, English Language Arts, Health	Faculty Meeting
+2022-03-03	True	B2	Regular	Mathematics, Music, Art	None
+2022-03-04	True	A2	Regular	Computer Science, Social Studies, Technology	None
+2022-03-05	False	None	None	None	None
+2022-03-06	False	None	None	None	None
+2022-03-07	True	B	Regular	Science	None
+2022-03-08	True	A1	Regular	Science	None
+2022-03-09	True	B1	Regular	World Languages, English Language Arts, Health	None
+2022-03-10	True	A2	Regular	Mathematics, Music, Art	None
+2022-03-11	True	B2	Regular	Computer Science, Social Studies, Technology	None
+2022-03-12	False	None	None	None	None
+2022-03-13	False	None	None	None	None
+2022-03-14	True	A	Regular	Science	None
+2022-03-15	True	B1	Regular	Science	None
+2022-03-16	True	A1	Conference	World Languages, English Language Arts, Health	Department Meeting, End of MP1
+2022-03-17	True	B2	Regular	Mathematics, Music, Art	Start of MP2
+2022-03-18	True	A2	Regular	Computer Science, Social Studies, Technology	None
+2022-03-19	False	None	None	None	None
+2022-03-20	False	None	None	None	None
+2022-03-21	True	B	Regular	Science	None
+2022-03-22	True	A1	Regular	Science	None
+2022-03-23	True	B1	Regular	World Languages, English Language Arts, Health	Grades due 8am
+2022-03-24	True	A2	Regular	Mathematics, Music, Art	None
+2022-03-25	True	B2	Regular	Computer Science, Social Studies, Technology	None
+2022-03-26	False	None	None	None	None
+2022-03-27	False	None	None	None	None
+2022-03-28	True	A	Regular	Science	Report Card Distribution
+2022-03-29	True	B1	Regular	Science	None
+2022-03-30	True	A1	Regular	World Languages, English Language Arts, Health	None
+2022-03-31	True	B2	Regular	Mathematics, Music, Art	None
+2022-04-01	True	A2	Regular	Computer Science, Social Studies, Technology	None
+2022-04-02	False	None	None	None	None
+2022-04-03	False	None	None	None	None
+2022-04-04	True	B1	Regular	Science	None
+2022-04-05	True	A1	Regular	World Languages, English Language Arts, Health	None
+2022-04-06	True	B2	Conference	Mathematics, Music, Art	Faculty Meeting
+2022-04-07	True	A2	Regular	Computer Science, Social Studies, Technology	Parent Teacher Conferences (evening)
+2022-04-08	True	B	PTC	None	Parent Teacher Conferences (daytime)
+2022-04-09	False	None	None	None	None
+2022-04-10	False	None	None	None	None
+2022-04-11	True	A1	Regular	Science	None
+2022-04-12	True	B1	Regular	World Languages, English Language Arts, Health	None
+2022-04-13	True	A2	Regular	Mathematics, Music, Art	None
+2022-04-14	True	B2	Regular	Computer Science, Social Studies, Technology	None
+2022-04-15	False	None	None	None	Spring Recess
+2022-04-16	False	None	None	None	None
+2022-04-17	False	None	None	None	None
+2022-04-18	False	None	None	None	Spring Recess
+2022-04-19	False	None	None	None	Spring Recess
+2022-04-20	False	None	None	None	Spring Recess
+2022-04-21	False	None	None	None	Spring Recess
+2022-04-22	False	None	None	None	Spring Recess
+2022-04-23	False	None	None	None	None
+2022-04-24	False	None	None	None	None
+2022-04-25	True	A	Regular	None	None
+2022-04-26	True	B1	Regular	Science	None
+2022-04-27	True	A1	Conference	World Languages, English Language Arts, Health	Department Meeting
+2022-04-28	True	B2	Regular	Mathematics, Music, Art	None
+2022-04-29	True	A2	Regular	Computer Science, Social Studies, Technology	None
+2022-04-30	False	None	None	None	None
+2022-05-01	False	None	None	None	None
+2022-05-02	False	None	None	None	Eid al-Fitr
+2022-05-03	True	A1	Regular	Science	None
+2022-05-04	True	B1	Conference	World Languages, English Language Arts, Health	Faculty Meeting, End of MP2
+2022-05-05	True	A2	Regular	Mathematics, Music, Art	Start of MP3
+2022-05-06	True	B2	Regular	Computer Science, Social Studies, Technology	None
+2022-05-07	False	None	None	None	None
+2022-05-08	False	None	None	None	None
+2022-05-09	True	A	Regular	Science	None
+2022-05-10	True	B1	Regular	Science	None
+2022-05-11	True	A1	Regular	World Languages, English Language Arts, Health	Grades due 8am
+2022-05-12	True	B2	Regular	Mathematics, Music, Art	None
+2022-05-13	True	A2	Regular	Computer Science, Social Studies, Technology	None
+2022-05-14	False	None	None	None	None
+2022-05-15	False	None	None	None	None
+2022-05-16	True	B	Regular	Science	Report Card Distribution
+2022-05-17	True	A1	Regular	Science	None
+2022-05-18	True	B1	Conference	World Languages, English Language Arts, Health	Department Meeting
+2022-05-19	True	A2	Regular	Mathematics, Music, Art	None
+2022-05-20	True	B2	Regular	Computer Science, Social Studies, Technology	None
+2022-05-21	False	None	None	None	None
+2022-05-22	False	None	None	None	None
+2022-05-23	True	A	Regular	Science	None
+2022-05-24	True	B1	Regular	Science	None
+2022-05-25	True	A1	Regular	World Languages, English Language Arts, Health	None
+2022-05-26	True	B2	Regular	Mathematics, Music, Art	None
+2022-05-27	True	A2	Regular	Computer Science, Social Studies, Technology	None
+2022-05-28	False	None	None	None	None
+2022-05-29	False	None	None	None	None
+2022-05-30	False	None	None	None	Memorial Day
+2022-05-31	True	B	Regular	Science	None
+2022-06-01	True	A1	Regular	World Languages, English Language Arts, Health	None
+2022-06-02	True	B1	Regular	Mathematics, Music, Art	None
+2022-06-03	True	A2	Regular	Computer Science, Social Studies, Technology	None
+2022-04-04	False	None	None	None	None
+2022-06-05	False	None	None	None	None
+2022-06-06	True	B2	Regular	Finals	Finals
+2022-06-07	False	None	None	None	Clerical Day
+2022-06-08	True	A1	Regular	Finals	Finals
+2022-06-09	False	None	None	None	Chancellor's Day
+2022-06-10	True	B1	Regular	Finals	Finals
+2022-06-11	False	None	None	None	None
+2022-06-12	False	None	None	None	None
+2022-06-13	True	A2	Regular	Finals	Finals
+2022-06-14	True	B	Regular	Finals	Finals, End of MP3
+2022-06-15	False	None	None	None	Regents Exams
+2022-06-16	False	None	None	None	Regents Exams
+2022-06-17	False	None	None	None	Regents Exams
+2022-06-18	False	None	None	None	None
+2022-06-19	False	None	None	None	None
+2022-06-20	False	None	None	None	Juneteenth
+2022-06-21	False	None	None	None	Regents Exams
+2022-06-22	False	None	None	None	Regents Exams
+2022-06-23	False	None	None	None	Regents Exams
+2022-06-24	False	None	None	None	Regents Exams, Grades due 8am
+2022-06-25	False	None	None	None	None
+2022-06-26	True	None	None	None	None
+2022-06-27	True	None	Regular	None	Last day of school

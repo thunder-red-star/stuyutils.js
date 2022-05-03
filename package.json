@@ -1,0 +1,17 @@
+{
+  "name": "stuyutils.js",
+  "version": "1.0.0",
+  "description": "A NodeJS port of the PyPi package stuy-utils",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csv-parse": "^5.0.4",
+    "csv-parser": "^3.0.0",
+    "date-and-time": "^2.3.1"
+  }
+}
