@@ -1,6 +1,6 @@
 {
   "name": "stuyutils.js",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A NodeJS port of the PyPi package stuy-utils",
   "main": "src/index.js",
   "scripts": {
