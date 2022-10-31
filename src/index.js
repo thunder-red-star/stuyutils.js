@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const csv = require('csv-parser');
+require('csv-parser');
 const errors = require('./errors');
 const DateTime = require('date-and-time');
 
@@ -30,11 +30,11 @@ let termDays = {};
 termDaysFile.split('\n').forEach(function(line) {
 	let [date, school, cycle, schedule, testing, events] = line.split('\t');
 	termDays[date] = Info(
-		school == "True" ? true : false,
-		cycle == "None" ? null : cycle,
-		schedule == "None" ? null : schedule,
-		testing == "None" ? null : testing,
-		events == "None" ? null : events
+		school === "True",
+		cycle === "None" ? null : cycle,
+		schedule === "None" ? null : schedule,
+		testing === "None" ? null : testing,
+		events === "None" ? null : events
 	);
 });
 
@@ -52,11 +52,13 @@ let regularBellsFile = fs.readFileSync(path.join(__dirname, "./data/regular.tsv"
 let conferenceBellsFile = fs.readFileSync(path.join(__dirname, "./data/conference.tsv"), "utf8");
 let homeroomBellsFile = fs.readFileSync(path.join(__dirname, "./data/homeroom.tsv"), "utf8");
 let ptcBellsFile = fs.readFileSync(path.join(__dirname, "./data/ptc.tsv"), "utf8");
+let extendedHomeroomBellsFile = fs.readFileSync(path.join(__dirname, "./data/extended-homeroom.tsv"), "utf8");
 
 let regularBells = {};
 let conferenceBells = {};
 let homeroomBells = {};
 let ptcBells = {};
+let extendedHomeroomBells = {};
 
 let regularBellsFileLines = regularBellsFile.split('\n');
 regularBellsFileLines.shift();
@@ -86,26 +88,12 @@ ptcBellsFileLines.forEach(function(line) {
 	ptcBells[cols[0]] = Time(DateTime.parse(cols[1], "h:mm A", true), DateTime.parse(cols[2].trim(), "h:mm A", true));
 });
 
-
-function twelveToTwentyFour(time) {
-	/**
-	 * Converts a time in the format HH:MM A to 24-hour format HH:mm:ss
-	 * @param time: string
-	 * @returns string
-	 */
-	let ampm = time.split(" ")[1];
-	let split = time.split(":");
-	let hour = parseInt(split[0]);
-	let minute = parseInt(split[1]);
-
-	if (ampm == "AM" && hour == 12) {
-		hour = 0;
-	}
-	if (ampm == "PM" && hour !== 12) {
-		hour += 12;
-	}
-	return (hour < 10 ? "0" + hour : hour) + ":" + (minute < 10 ? "0" + minute : minute) + ":00";
-}
+let extendedHomeroomBellsFileLines = extendedHomeroomBellsFile.split('\n');
+extendedHomeroomBellsFileLines.shift();
+extendedHomeroomBellsFileLines.forEach(function(line) {
+	let cols = line.split('\t');
+	extendedHomeroomBells[cols[0]] = Time(DateTime.parse(cols[1], "h:mm A", true), DateTime.parse(cols[2].trim(), "h:mm A", true));
+});
 
 function getDayInfo (date) {
 	/**
@@ -115,7 +103,7 @@ function getDayInfo (date) {
 	 */
 	let dayInfo = termDays[DateTime.format(date, "YYYY-MM-DD")];
 
-	if (dayInfo == undefined) {
+	if (dayInfo === undefined) {
 		// Error with DayNotInData
 		throw new errors.DayNotInData(DateTime.format(date, "YYYY-MM-DD"));
 	}
@@ -135,13 +123,13 @@ function getNextSchoolDay (date) {
 		day = date;
 	}
 	let dayInfo = getDayInfo(day);
-	if (dayInfo == undefined) {
+	if (dayInfo === undefined) {
 		// Error with DayNotInData
 		throw new errors.DayNotInData(DateTime.format(day, "YYYY-MM-DD"));
 	}
 	let nextDay = DateTime.addDays(day, 1);
-	while (getDayInfo(nextDay).school == false) {
-		if (getDayInfo(nextDay) == undefined) {
+	while (getDayInfo(nextDay).school === false) {
+		if (getDayInfo(nextDay) === undefined) {
 			return undefined;
 		}
 		nextDay = DateTime.addDays(nextDay, 1);
@@ -153,7 +141,7 @@ function getBellSchedule (date, thisDay = false) {
 	/**
 	 * Returns the bell schedule for a given date
 	 * @param date: Date | string
-	 * @returns {[key: string]: Time}
+	 * @returns [key: string]: Time
 	 */
 	let day;
 	if (date instanceof String) {
@@ -162,20 +150,22 @@ function getBellSchedule (date, thisDay = false) {
 		day = date;
 	}
 	let dayInfo = getDayInfo(day);
-	if (dayInfo == undefined) {
+	if (dayInfo === undefined) {
 		// Error with DayNotInData
 		throw new errors.DayNotInData(DateTime.format(day, "YYYY-MM-DD"));
 	}
 	let bellSchedule = {};
-	if (dayInfo.schedule != null && dayInfo.school == true) {
-		if (dayInfo.schedule == "Regular") {
+	if (dayInfo.schedule != null && dayInfo.school === true) {
+		if (dayInfo.schedule === "Regular") {
 			bellSchedule = regularBells;
-		} else if (dayInfo.schedule == "Conference") {
+		} else if (dayInfo.schedule === "Conference") {
 			bellSchedule = conferenceBells;
-		} else if (dayInfo.schedule == "Homeroom") {
+		} else if (dayInfo.schedule === "Homeroom") {
 			bellSchedule = homeroomBells;
-		} else if (dayInfo.schedule == "PTC") {
+		} else if (dayInfo.schedule === "PTC") {
 			bellSchedule = ptcBells;
+		} else if (dayInfo.schedule === "Extended Homeroom") {
+			bellSchedule = extendedHomeroomBells;
 		}
 	} else {
 		// If thisDay is true, and there was no schedule found in the above if statements, return undefined
@@ -202,15 +192,14 @@ function getCurrentClass (date) {
 		day = date;
 	}
 	let dayInfo = getDayInfo(day);
-	if (dayInfo == undefined) {
+	if (dayInfo === undefined) {
 		// Error with DayNotInData
 		throw new errors.DayNotInData(DateTime.format(day, "YYYY-MM-DD"));
 	}
 	let bellSchedule = getBellSchedule(day);
-	if (bellSchedule == undefined) {
+	if (bellSchedule === undefined) {
 		return undefined;
 	}
-	let currentClass = undefined;
 	for (let period in bellSchedule) {
 		let bellTime = bellSchedule[period];
 		let timeEpoch = DateTime.parse(DateTime.format(day, "HH:mm:ss", ), "HH:mm:ss", true);
@@ -238,12 +227,12 @@ function getNextClass (date, skipPassing = false) {
 		day = date;
 	}
 	let dayInfo = getDayInfo(day);
-	if (dayInfo == undefined) {
+	if (dayInfo === undefined) {
 		// Error with DayNotInData
 		throw new errors.DayNotInData(DateTime.format(day, "YYYY-MM-DD"));
 	}
 	let bellSchedule = getBellSchedule(day);
-	if (bellSchedule == undefined) {
+	if (bellSchedule === undefined) {
 		return undefined;
 	}
 	let nextClass = undefined;
@@ -253,11 +242,9 @@ function getNextClass (date, skipPassing = false) {
 	for (let x = 0; x < Object.keys(bellSchedule).length; x++) {
 		let period = Object.keys(bellSchedule)[x];
 		let bellTime = bellSchedule[period];
-		if (currentClass == undefined) {
+		if (currentClass === undefined) {
 			if (bellTime.start.getTime() >= day.getTime()) {
-				if (skipPassing == true && Object.keys(bellSchedule)[x].includes("Passing")) {
-					continue;
-				} else {
+				if (!(skipPassing === true && Object.keys(bellSchedule)[x].includes("Passing"))) {
 					nextClass = new Object({
 						period: period,
 						start: bellTime.start,
@@ -268,9 +255,7 @@ function getNextClass (date, skipPassing = false) {
 			}
 		} else {
 			if (bellTime.start.getTime() >= currentClass.end.getTime()) {
-				if (skipPassing == true && Object.keys(bellSchedule)[x].includes("Passing")) {
-					continue;
-				} else {
+				if (!(skipPassing === true && Object.keys(bellSchedule)[x].includes("Passing"))) {
 					nextClass = new Object({
 						period: period,
 						start: bellTime.start,
@@ -298,12 +283,12 @@ function getCurrentPeriod (date) {
 		day = date;
 	}
 	let dayInfo = getDayInfo(day);
-	if (dayInfo == undefined) {
+	if (dayInfo === undefined) {
 		// Error with DayNotInData
 		throw new errors.DayNotInData(DateTime.format(day, "YYYY-MM-DD"));
 	}
 	let bellSchedule = getBellSchedule(day);
-	if (bellSchedule == undefined) {
+	if (bellSchedule === undefined) {
 		return undefined;
 	}
 	let currentPeriod = undefined;

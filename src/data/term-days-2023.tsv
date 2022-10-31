@@ -52,7 +52,7 @@ Date	School	Cycle	Schedule	Testing	Events
 2022-10-28	True	B2	Regular	Computer Science, Social Studies, Technology	None
 2022-10-29	False	None	None	None	None
 2022-10-30	False	None	None	None	None
-2022-10-31	True	A	Homeroom	Science	Report Cards
+2022-10-31	True	A	Extended Homeroom	Science	Report Cards
 2022-11-01	True	B1	Regular	Science	None
 2022-11-02	True	A1	Regular	Mathematics, Music, Art, Technology	None
 2022-11-03	True	B2	Regular	World Languages, English Language Arts, Computer Science, Social Studies, Health	None
@@ -69,8 +69,8 @@ Date	School	Cycle	Schedule	Testing	Events
 2022-11-14	True	A1	Regular	Science	None
 2022-11-15	True	B1	Regular	World Languages, English Language Arts, Health	None
 2022-11-16	True	A2	Regular	Mathematics, Music, Art	None
-2022-11-17	True	B2	Regular	Computer Science, Social Studies, Technology	Parent-Teacher Conferences
-2022-11-18	True	A	Regular	None	Parent-Teacher Conferences
+2022-11-17	True	B2	PTC	Computer Science, Social Studies, Technology	Parent-Teacher Conferences
+2022-11-18	True	A	PTC	None	Parent-Teacher Conferences
 2022-11-19	False	None	None	None	None
 2022-11-20	False	None	None	None	None
 2022-11-21	True	B	Regular	Science	None
@@ -202,8 +202,8 @@ Date	School	Cycle	Schedule	Testing	Events
 2023-03-27	True	B1	Regular	Science	None
 2023-03-28	True	A1	Regular	World Languages, English Language Arts, Health	None
 2023-03-29	True	B2	Regular	Mathematics, Music, Art	None
-2023-03-30	True	A2	Regular	Computer Science, Social Studies, Technology	Parent-Teacher Conferences
-2023-03-31	True	B	Regular	None	Parent-Teacher Conferences
+2023-03-30	True	A2	PTC	Computer Science, Social Studies, Technology	Parent-Teacher Conferences
+2023-03-31	True	B	PTC	None	Parent-Teacher Conferences
 2023-04-01	False	None	None	None	None
 2023-04-02	False	None	None	None	None
 2023-04-03	True	A	Regular	Science	None
