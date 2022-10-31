@@ -1,6 +1,6 @@
 {
   "name": "stuyutils.js",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A NodeJS port of the PyPi package stuy-utils",
   "main": "src/index.js",
   "scripts": {
@@ -12,6 +12,12 @@
   "dependencies": {
     "csv-parse": "^5.0.4",
     "csv-parser": "^3.0.0",
-    "date-and-time": "^2.3.1"
+    "date-and-time": "^2.3.1",
+    "node-polyfill-webpack-plugin": "^1.1.4",
+    "stream": "^0.0.2"
+  },
+  "devDependencies": {
+    "csv-loader": "^3.0.3",
+    "xml-loader": "^1.2.1"
   }
 }

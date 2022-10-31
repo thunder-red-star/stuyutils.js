@@ -23,7 +23,7 @@ Time = function(start, end) {
 }
 
 // Parse Term Days as TSV, return object of Info objects
-let termDaysFile = fs.readFileSync(path.join(__dirname, './data/term-days-2022.tsv'), 'utf8');
+let termDaysFile = fs.readFileSync(path.join(__dirname, './data/term-days-2023.tsv'), 'utf8');
 let termDays = {};
 
 // Parse TSV
